@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          I HAVE STARTED LEARNING
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+function App()
+{
+  function handleChange()
+  {
+    const names=["start","learn","do"];
+    const int=Math.floor(Math.random()*3);
+    return names[int]
+  }
+  return(
+    <div>
+      i am learning
+      <p>lets we {handleChange()} react</p>
     </div>
   );
 }
-
 export default App;
